@@ -10,7 +10,7 @@ export default function Page() {
 
 
   return (
-    <div className=''>
+    <div className='font-mono text-gray-300'>
       Mobilicis Assignment
     </div>
   )

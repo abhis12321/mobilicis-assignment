@@ -26,7 +26,7 @@ export default function NavBar() {
                     <Link href={''} className='hover:bg-gray-950/50 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Job Listings</Link>
                 </div>
                 <div className="w-full md:w-fit flex items-center justify-center">
-                    <Link href={''} className='hover:bg-gray-950/50 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>About Japan</Link>
+                    <Link href={'/about'} className='hover:bg-gray-950/50 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>About Japan</Link>
                 </div>
                 <div className="w-full md:w-fit flex items-center justify-center">
                     <Link href={''} className='hover:bg-gray-950/50 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Contact</Link>
