@@ -1,6 +1,14 @@
-import React from 'react'
+"use client"
 
-export default function page() {
+import React, { useEffect } from 'react';
+import axios from 'axios';
+
+export default function Page() {
+  useEffect(() => {
+    
+  })
+
+
   return (
     <div className=''>
       Mobilicis Assignment
