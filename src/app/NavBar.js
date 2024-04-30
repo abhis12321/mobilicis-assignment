@@ -14,7 +14,7 @@ export default function NavBar() {
 
     return (
         <div className='leading-[3rem] flex items-center justify-between px-7 py-1 bg-gradient-to-b from-gray-950 to-gray-800'>
-            <div className="text-3xl font-serif leading-[3.4rem] bg-gradient-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent font-extrabold">Japan</div>
+            <div className="text-4xl font-serif leading-[3.4rem] bg-gradient-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent font-extrabold">Japan</div>
             <div className="right-navbar hidden md:flex flex-col md:flex-row lg:gap-4 bg-gradient-to-r from-slate-800 to-gray-950 md:[background:none] border-l-2 border-gray-700 md:border-none min-w-[200px] min-h-[100vh] md:min-h-fit fixed md:static top-0 right-0">
                 <div className="text-4xl hover:text-red-800 text-center cursor-pointer mt-3" onClick={handleRight}>
                     <FontAwesomeIcon icon={faXmark} size='sm' className="hidden cutX" />

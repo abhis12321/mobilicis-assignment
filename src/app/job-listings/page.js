@@ -115,7 +115,7 @@ export default function Page() {
   return (
     <div className="py-4 flex flex-col gap-4">
       <form
-        className="flex gap-3 py-2 px-3 w-[98%] max-w-[700px] bg-gray-800 mx-auto rounded"
+        className="flex gap-2 p-2 w-[98%] max-w-[540px] bg-blue-800/20 mx-auto rounded-lg"
         onSubmit={searchJobs}
       >
         <input
@@ -123,22 +123,21 @@ export default function Page() {
           value={role}
           onChange={(e) => setRole(e.target.value)}
           placeholder="Search a Role"
-          className="py-2 px-4 flex-1 bg-teal-900/20 text-center text-gray-200 outline-none shadow-[0_0_3px_gray] focus:shadow-[0_0_3px_cyan] rounded"
+          className="py-2 px-4 flex-1 bg-slate-950/50 text-cente text-gray-200 outline-none border-2 focus:border-cyan-400 rounded-lg"
         />
         <input
           type="submit"
           value={"search"}
-          className="hidden xs:block py-2 px-4 cursor-pointer shadow-[0_0_3px_cyan] hover:bg-cyan-950/80 active:bg-slate-950 rounded"
+          className="hidden xs:block py-2 bg-slate-950/50 px-4 cursor-pointer border-2 hover:border-cyan-400 hover:bg-cyan-950/80 active:bg-slate-950 rounded-lg"
         />
       </form>
 
-      <h1 className="text-center py-4 px-8 mb-2 rounded-md drop-shadow-[0_0_1px_red] text-4xl sm:text-5xl font-sgray font-exyellod sm:font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-gray-600 to-yellow-900 w-fit" onClick={logJobs}>
-        Job listings
+      <div className="flex flex-col items-center gap-5 py-4">
+      <h1 className="text-center py-4 px-8 mb-2 rounded-md drop-shadow-[0_0_1px_red] text-4xl sm:text-5xl font-sgray font-bold sm:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-900 w-fit" onClick={logJobs}>
+        Job Listings
       </h1>
-
-      <div className="flex flex-col gap-5 p-4">
         {jobs?.map((job, index) => (
-          <div className="flex flex-col bg-slate-800 p-8 rounded-lg shadow-[0_0_5px_white] hover:shadow-[0_0_8px_red]" key={index}>
+          <div className="flex flex-col bg-slate-800 p-8 rounded-lg shadow-[0_0_5px_white] hover:shadow-[0_0_8px_red] max-w-[700px] w-[98%]" key={index}>
             <h1 className="text-gray-400 font-semibold text-lg">
               Company Name :
               <span className="text-gray-100 text-xl font-bold">
@@ -165,9 +164,9 @@ export default function Page() {
             </h1>
             <p className="text-gray-400 font-semibold text-lg">
               Salary :
-              <span className="text-gray-100 text-xl font-bold">
+              <span className="text-gray-100 text-xl font-bold"> 
                 {job.salary.type
-                  ? "$" + job.salary.min + " to $" + job.salary.max
+                  ? `$${job.salary.min} to $${job.salary.max} ${job.salary.type}`
                   : "Not disclosed"}
               </span>
             </p>
