@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,10 +12,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-gray-950 text-white">
+    <html lang="en" className="bg-gray-950/95 text-white">
       <body className={inter.className}>
         <NavBar />
-        {children}
+        <div className="" style={{ minHeight: "calc(100vh - 4rem" }}>
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
