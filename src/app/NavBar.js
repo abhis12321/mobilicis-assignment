@@ -20,7 +20,7 @@ export default function NavBar() {
                     <FontAwesomeIcon icon={faXmark} size='sm' className="hidden cutX" />
                 </div>
                 <div className="w-full md:w-fit flex items-center justify-center">
-                    <Link href={''} className='hover:bg-cyan-950/40 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Home</Link>
+                    <Link href={'/'} className='hover:bg-cyan-950/40 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Home</Link>
                 </div>
                 <div className="w-full md:w-fit flex items-center justify-center">
                     <Link href={'/job-listings'} className='hover:bg-cyan-950/40 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Job Listings</Link>
@@ -29,7 +29,7 @@ export default function NavBar() {
                     <Link href={'/about'} className='hover:bg-cyan-950/40 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>About Japan</Link>
                 </div>
                 <div className="w-full md:w-fit flex items-center justify-center">
-                    <Link href={''} className='hover:bg-cyan-950/40 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Contact</Link>
+                    <Link href={'contact'} className='hover:bg-cyan-950/40 md:hover:bg-red-950/20 md:hover:shadow-[0_0_3px_white] text-center w-full md:min-w-28 md:px-4 md:rounded-xl'>Contact</Link>
                 </div>
             </div>
 
